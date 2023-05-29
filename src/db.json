@@ -1,0 +1,14 @@
+{
+  "project": [
+    {
+      "name": "san pham c",
+      "price": "22222",
+      "id": 1
+    },
+    {
+      "name": "san pham 1",
+      "price": "1111",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div class="container">
+    <table *ngFor="let item of product,index as i" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <button (click)="xoa(item.id!)">
+                    <td>xoa</td>
+                </button>
+                <a routerLink="add"><button>
+                        <td>add</td>
+                    </button></a>
+
+                <a [routerLink]="'edit/'+item.id"><button>
+                        <td>edit</td>
+                    </button></a>
+
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+</div>
+<router-outlet />
